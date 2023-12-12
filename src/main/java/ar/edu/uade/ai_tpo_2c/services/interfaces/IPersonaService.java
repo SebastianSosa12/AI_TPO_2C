@@ -1,6 +1,6 @@
 package ar.edu.uade.ai_tpo_2c.services.interfaces;
 
-import ar.edu.uade.ai_tpo_2c.modelo.Persona;
+import ar.edu.uade.ai_tpo_2c.modelos.Persona;
 import org.springframework.data.domain.Page;
 
 import java.awt.print.Pageable;

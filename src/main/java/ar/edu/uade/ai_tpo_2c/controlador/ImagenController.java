@@ -1,6 +1,6 @@
 package ar.edu.uade.ai_tpo_2c.controlador;
 
-import ar.edu.uade.ai_tpo_2c.modelo.Imagen;
+import ar.edu.uade.ai_tpo_2c.modelos.Imagen;
 import ar.edu.uade.ai_tpo_2c.services.implemented.ImagenServiceImpl;
 import ar.edu.uade.ai_tpo_2c.views.ImagenView;
 import org.springframework.beans.factory.annotation.Autowired;

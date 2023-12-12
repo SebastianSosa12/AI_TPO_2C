@@ -1,6 +1,6 @@
 package ar.edu.uade.ai_tpo_2c.services.implemented;
 
-import ar.edu.uade.ai_tpo_2c.modelo.Reclamo;
+import ar.edu.uade.ai_tpo_2c.modelos.Reclamo;
 import ar.edu.uade.ai_tpo_2c.repositorios.ReclamoRepositorio;
 import ar.edu.uade.ai_tpo_2c.services.interfaces.IReclamoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +43,7 @@ public class ReclamoServiceImpl implements IReclamoService {
 
 	@Override
 	public Reclamo update(Reclamo reclamoActualizado, int id) {
-		Reclamo reclamoPorActualizar= repositorio.getReferenceById(id);
+		Reclamo reclamoPorActualizar= repositorio.getById(id);
 
 		reclamoPorActualizar.setDescripcion(reclamoActualizado.getDescripcion());
 		reclamoPorActualizar.setImagenes(reclamoActualizado.getImagenes());

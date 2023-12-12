@@ -4,7 +4,7 @@ import ar.edu.uade.ai_tpo_2c.exceptions.EdificioException;
 import ar.edu.uade.ai_tpo_2c.exceptions.PersonaException;
 import ar.edu.uade.ai_tpo_2c.exceptions.ReclamoException;
 import ar.edu.uade.ai_tpo_2c.exceptions.UnidadException;
-import ar.edu.uade.ai_tpo_2c.modelo.*;
+import ar.edu.uade.ai_tpo_2c.modelos.*;
 import ar.edu.uade.ai_tpo_2c.services.interfaces.IEdificioService;
 import ar.edu.uade.ai_tpo_2c.services.interfaces.IPersonaService;
 import ar.edu.uade.ai_tpo_2c.services.interfaces.IReclamoService;
@@ -232,7 +232,7 @@ public class Controlador {
 
     public PersonaView validarPassword(Persona persona) throws PersonaException {
         Persona usuarioValidado= buscarPersona(persona.getDocumento());
-        if(usuarioValidado==null || !(usuarioValidado.getPassword().equals(persona.getPassword()))){
+        if(usuarioValidado==null || !(usuarioValidado.getContrasenia().equals(persona.getContrasenia()))){
             return new PersonaView();
         }else{
             return usuarioValidado.toView();

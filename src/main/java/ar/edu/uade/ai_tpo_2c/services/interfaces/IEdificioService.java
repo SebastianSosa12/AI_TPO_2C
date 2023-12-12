@@ -1,6 +1,6 @@
 package ar.edu.uade.ai_tpo_2c.services.interfaces;
 
-import ar.edu.uade.ai_tpo_2c.modelo.Edificio;
+import ar.edu.uade.ai_tpo_2c.modelos.Edificio;
 import org.springframework.data.domain.Page;
 
 import java.awt.print.Pageable;

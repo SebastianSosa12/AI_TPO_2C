@@ -2,8 +2,8 @@ package ar.edu.uade.ai_tpo_2c.controlador;
 
 import ar.edu.uade.ai_tpo_2c.exceptions.PersonaException;
 import ar.edu.uade.ai_tpo_2c.exceptions.UnidadException;
-import ar.edu.uade.ai_tpo_2c.modelo.Unidad;
-import ar.edu.uade.ai_tpo_2c.modelo.UnidadPersona;
+import ar.edu.uade.ai_tpo_2c.modelos.Unidad;
+import ar.edu.uade.ai_tpo_2c.modelos.UnidadPersona;
 import ar.edu.uade.ai_tpo_2c.views.UnidadSinEdificioView;
 import ar.edu.uade.ai_tpo_2c.views.UnidadView;
 import jakarta.websocket.server.PathParam;
@@ -12,7 +12,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-//import javax.websocket.server.PathParam;
 import java.util.List;
 @CrossOrigin(origins= {"*"}, maxAge = 4800, allowCredentials = "false" )
 @RestController
@@ -24,6 +23,8 @@ public class UnidadController {
     public UnidadController(Controlador controlador){
         this.controlador=controlador;
     }
+
+
     @GetMapping("/edificio")
     public ResponseEntity<List<UnidadSinEdificioView>> obtenerUnidadesSinEdificios(@PathParam("codigo") int codigo){
         return ResponseEntity.ok(controlador.getUnidadesPorEdificio(codigo));

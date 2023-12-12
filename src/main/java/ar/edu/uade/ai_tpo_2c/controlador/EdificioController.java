@@ -1,7 +1,7 @@
 package ar.edu.uade.ai_tpo_2c.controlador;
 
 import ar.edu.uade.ai_tpo_2c.exceptions.EdificioException;
-import ar.edu.uade.ai_tpo_2c.modelo.Edificio;
+import ar.edu.uade.ai_tpo_2c.modelos.Edificio;
 import ar.edu.uade.ai_tpo_2c.views.EdificioConUnidadesView;
 import ar.edu.uade.ai_tpo_2c.views.EdificioView;
 import lombok.extern.slf4j.Slf4j;

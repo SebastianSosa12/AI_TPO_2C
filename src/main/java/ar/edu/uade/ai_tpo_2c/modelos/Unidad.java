@@ -1,14 +1,13 @@
-package ar.edu.uade.ai_tpo_2c.modelo;
+package ar.edu.uade.ai_tpo_2c.modelos;
 
 import ar.edu.uade.ai_tpo_2c.exceptions.UnidadException;
 import ar.edu.uade.ai_tpo_2c.views.EdificioView;
 import ar.edu.uade.ai_tpo_2c.views.UnidadSinEdificioView;
 import ar.edu.uade.ai_tpo_2c.views.UnidadView;
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
-
 
 import java.util.ArrayList;
 import java.util.List;

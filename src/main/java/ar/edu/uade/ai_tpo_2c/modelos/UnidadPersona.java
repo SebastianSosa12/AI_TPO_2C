@@ -1,17 +1,16 @@
-package ar.edu.uade.ai_tpo_2c.modelo;
+package ar.edu.uade.ai_tpo_2c.modelos;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-public class EstadoMedidas {
+public class UnidadPersona {
+    private String codigoUnidad;
 
-    private String medidas;
-
-    private int estado;
+    private String documento;
 }

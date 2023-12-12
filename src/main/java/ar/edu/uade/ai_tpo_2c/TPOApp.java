@@ -4,9 +4,13 @@ import ar.edu.uade.ai_tpo_2c.services.implemented.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
+@EntityScan(basePackages = "ar.edu.uade.ai_tpo_2c.modelo")
+@EnableJpaRepositories(basePackages = "ar.edu.uade.ai_tpo_2c.repositorios")
 public class TPOApp {
 
 	public static void main(String[] args) {
@@ -16,10 +20,11 @@ public class TPOApp {
 	@Bean
 	CommandLineRunner commandLineRunner(EdificioServiceImpl edificioService, UnidadServiceImpl unidadService, PersonaServiceImpl personaService, ReclamoServiceImpl reclamoService, ImagenServiceImpl imagenService) {
 		return args->{
-			/*//Traer unidad
+			/*
+			//Traer unidad
 			Optional<Unidad> unidad= unidadService.findById(15);
 			System.err.println(unidad.get().toString());
-			
+
 			// Sacar su edificio
 			Edificio edificioUnidad= unidad.get().getEdificio();
 			System.err.println(edificioUnidad.getDireccion());
@@ -27,6 +32,7 @@ public class TPOApp {
 			//Sacar dueños e inquilinos
 			List<Persona> inquilinos= unidad.get().getInquilinos();
 			inquilinos.forEach(i -> System.err.println("    "  + i.getNombre()));
+			*/
 			/*List<Persona> duenios= unidad.get().getDuenios();
 			duenios.forEach(d -> System.out.println("    "  + d.getNombre()));
 			

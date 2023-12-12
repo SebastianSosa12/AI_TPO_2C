@@ -12,5 +12,5 @@ public class PersonaSinRolView {
 
     private String documento;
     private String nombre;
-    private String email;
+    private String mail;
 }

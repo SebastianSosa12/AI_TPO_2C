@@ -1,10 +1,11 @@
-package ar.edu.uade.ai_tpo_2c.modelo;
+package ar.edu.uade.ai_tpo_2c.modelos;
 
 import ar.edu.uade.ai_tpo_2c.views.PersonaSinRolView;
 import ar.edu.uade.ai_tpo_2c.views.PersonaView;
-import jakarta.persistence.*;
+
 import lombok.*;
 
+import javax.persistence.*;
 
 
 @Entity
@@ -20,27 +21,25 @@ public class Persona {
 	private String documento;
 	private String nombre;
 
-	private String email;
+	private String mail;
 
-	@Column(name="pass")
-	private String password;
+	@Column(name="contrasenia")
+	private String contrasenia;
 
-	@Enumerated(EnumType.ORDINAL)
-	private Rol rol;
 	
-	public Persona(String nombre, String email, String password,Rol rol) {
+	public Persona(String nombre, String email, String contrasenia) {
 		this.documento = documento;
 		this.nombre = nombre;
-		this.email=email;
-		this.password=password;
-		this.rol=rol;
+		this.mail=email;
+		this.contrasenia=contrasenia;
+
 	}
 
 	public PersonaView toView() {
-		return new PersonaView(documento, nombre,email, rol);
+		return new PersonaView(documento, nombre, mail);
 	}
 
 	public PersonaSinRolView toViewSinRol() {
-		return new PersonaSinRolView(documento,nombre,email);
+		return new PersonaSinRolView(documento, nombre, mail);
 	}
 }

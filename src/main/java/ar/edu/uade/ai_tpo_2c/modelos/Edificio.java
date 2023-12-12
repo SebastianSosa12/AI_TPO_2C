@@ -1,13 +1,12 @@
-package ar.edu.uade.ai_tpo_2c.modelo;
+package ar.edu.uade.ai_tpo_2c.modelos;
 
 import ar.edu.uade.ai_tpo_2c.views.EdificioConUnidadesView;
 import ar.edu.uade.ai_tpo_2c.views.EdificioView;
 import ar.edu.uade.ai_tpo_2c.views.UnidadSinEdificioView;
-import jakarta.persistence.*;
+
 import lombok.*;
 
-
-
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

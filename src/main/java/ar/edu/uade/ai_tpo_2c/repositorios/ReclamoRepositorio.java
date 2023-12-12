@@ -1,6 +1,6 @@
 package ar.edu.uade.ai_tpo_2c.repositorios;
 
-import ar.edu.uade.ai_tpo_2c.modelo.Reclamo;
+import ar.edu.uade.ai_tpo_2c.modelos.Reclamo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

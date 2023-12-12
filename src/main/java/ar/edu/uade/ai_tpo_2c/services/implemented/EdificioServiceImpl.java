@@ -1,6 +1,6 @@
 package ar.edu.uade.ai_tpo_2c.services.implemented;
 
-import ar.edu.uade.ai_tpo_2c.modelo.Edificio;
+import ar.edu.uade.ai_tpo_2c.modelos.Edificio;
 import ar.edu.uade.ai_tpo_2c.repositorios.EdificioRepositorio;
 import ar.edu.uade.ai_tpo_2c.services.interfaces.IEdificioService;
 import lombok.extern.slf4j.Slf4j;

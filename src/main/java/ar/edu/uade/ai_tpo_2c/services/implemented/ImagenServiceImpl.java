@@ -1,6 +1,6 @@
 package ar.edu.uade.ai_tpo_2c.services.implemented;
 
-import ar.edu.uade.ai_tpo_2c.modelo.Imagen;
+import ar.edu.uade.ai_tpo_2c.modelos.Imagen;
 import ar.edu.uade.ai_tpo_2c.repositorios.ImagenRepositorio;
 import ar.edu.uade.ai_tpo_2c.services.interfaces.IImagenService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +23,7 @@ public class ImagenServiceImpl implements IImagenService {
 	}
 
 	@Override
-	public List<Imagen> findAll() {
+		public List<Imagen> findAll() {
 		// TODO Auto-generated method stub
 		return repositorio.findAll();
 	}
@@ -48,7 +48,7 @@ public class ImagenServiceImpl implements IImagenService {
 
 	@Override
 	public Imagen update(Imagen imagenActualizada, int id) {
-		Imagen imagenPorActualizar= repositorio.getReferenceById(id);
+		Imagen imagenPorActualizar= repositorio.getById(id);
 		imagenPorActualizar.setDireccion(imagenActualizada.getDireccion());
 
 		return repositorio.save(imagenPorActualizar);

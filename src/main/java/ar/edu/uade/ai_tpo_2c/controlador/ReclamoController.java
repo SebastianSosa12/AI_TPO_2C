@@ -1,9 +1,9 @@
 package ar.edu.uade.ai_tpo_2c.controlador;
 
 import ar.edu.uade.ai_tpo_2c.exceptions.ReclamoException;
-import ar.edu.uade.ai_tpo_2c.modelo.EstadoMedidas;
-import ar.edu.uade.ai_tpo_2c.modelo.Imagen;
-import ar.edu.uade.ai_tpo_2c.modelo.Reclamo;
+import ar.edu.uade.ai_tpo_2c.modelos.EstadoMedidas;
+import ar.edu.uade.ai_tpo_2c.modelos.Imagen;
+import ar.edu.uade.ai_tpo_2c.modelos.Reclamo;
 import ar.edu.uade.ai_tpo_2c.views.ReclamoView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

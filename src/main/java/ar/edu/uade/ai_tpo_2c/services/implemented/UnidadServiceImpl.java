@@ -1,6 +1,6 @@
 package ar.edu.uade.ai_tpo_2c.services.implemented;
 
-import ar.edu.uade.ai_tpo_2c.modelo.Unidad;
+import ar.edu.uade.ai_tpo_2c.modelos.Unidad;
 import ar.edu.uade.ai_tpo_2c.repositorios.UnidadRepositorio;
 import ar.edu.uade.ai_tpo_2c.services.interfaces.IUnidadService;
 import org.springframework.beans.factory.annotation.Autowired;

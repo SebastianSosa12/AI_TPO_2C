@@ -1,7 +1,7 @@
 package ar.edu.uade.ai_tpo_2c.controlador;
 
 import ar.edu.uade.ai_tpo_2c.exceptions.PersonaException;
-import ar.edu.uade.ai_tpo_2c.modelo.Persona;
+import ar.edu.uade.ai_tpo_2c.modelos.Persona;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

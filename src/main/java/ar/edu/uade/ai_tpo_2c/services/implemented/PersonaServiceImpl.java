@@ -1,6 +1,6 @@
 package ar.edu.uade.ai_tpo_2c.services.implemented;
 
-import ar.edu.uade.ai_tpo_2c.modelo.Persona;
+import ar.edu.uade.ai_tpo_2c.modelos.Persona;
 import ar.edu.uade.ai_tpo_2c.repositorios.PersonaRepositorio;
 import ar.edu.uade.ai_tpo_2c.services.interfaces.IPersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,10 +44,10 @@ public class PersonaServiceImpl implements IPersonaService {
 
 	@Override
 	public Persona update(Persona personaActualizada, String documento) {
-		Persona personaPorActualizar= repositorio.getReferenceById(documento);
+		Persona personaPorActualizar= repositorio.getById(documento);
 		personaPorActualizar.setNombre(personaActualizada.getNombre());
-		personaPorActualizar.setEmail(personaActualizada.getEmail());
-		personaPorActualizar.setPassword(personaActualizada.getPassword());
+		personaPorActualizar.setMail(personaActualizada.getMail());
+		personaPorActualizar.setContrasenia(personaActualizada.getContrasenia());
 		return repositorio.save(personaPorActualizar);
 	}
 
